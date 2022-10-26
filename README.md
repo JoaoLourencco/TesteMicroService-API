@@ -1,3 +1,5 @@
+
+
 ## Projeto Testes de Api expert com Robot Framework 👨🏻‍💻
 
 
@@ -18,9 +20,30 @@ o eco sistema rodando para que entendamos o produto como um todo. O download da 
 
 ## Quais Cenários executamos nos testes da API?
  
- **Método POST**<br>
-**Should create a new partner**: Cenário onde criamos um cadastro para um novo parceiro com sucesso, além de validarmos o Status code 201.<br>
-**Should return duplicate company name:** Cenário onde validamos a regra de negócio da API, na qual impede que seja repetido um mesmo nome de parceiro ao tentar fazer um cadastro
-<br>
-<br>
-**Método GET**
+ **Método POST**
+**Should create a new partner**: Cenário onde criamos um cadastro para um novo parceiro com sucesso, além de validarmos o Status code 201.<p>
+**Should return duplicate company name:** Cenário onde validamos a regra de negócio da API, na qual impede que seja repetido um mesmo nome de parceiro ao tentar fazer um cadastro<b>
+ <p>
+
+**Método GET**<b>
+**Should return a partner list :** Cenário onde é retornado a lista de parceiros cadastrados. <p>
+**Should search partner by name:** Cenário onde é retornado um parceiro pelo nome.<b>
+<p>
+ <p>
+**Método PUT**<p>
+**Should enable a partner:** Habilitando um parceiro<p>
+**Should disable a partner:** Desabilitando um parceiro<p>
+**Should return 404 on enable a partner:** Deve retornar status code 404 ao habilitar um parceiro<p>
+**Should return 404 on disable a partner:** Deve retornar status code 404 ao desabilitar um parceiro<p>
+<p>
+<p>
+**Método Delete**<p>
+**Should remove a partner:** Deve remover um parceiro e validar o status code 204<p>
+**Should return 404 on remove partner:** Deve retornar o status code 404 ao tentar remover um parceiro inexistente<p>
+ <p>
+ <p>
+
+ Além dos testes, criamos massas dinâmica usando a linguagem python, tornando assim nossos testes de API totalmente independentes.
+
+
+
